@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
 
         val annonces: ArrayList<String> = ArrayList()
         var n=3 // number of opportunities in a category  ( lenna nekhdhoha mel base )
-        for (i in 1..10){
+        for (i in 1..100){
             annonces.add("annonce # $i")
         }
 

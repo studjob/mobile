@@ -17,10 +17,10 @@ class AnnoncesAdapter (val annonces: ArrayList<String>) :
     override fun getItemCount()= annonces.size
 
     override fun onBindViewHolder(holder: AnnoncesAdapter.ViewHolder, position: Int) {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+            holder.category1.text=annonces[position]
     }
 
     class ViewHolder (itemView: View): RecyclerView.ViewHolder(itemView){
-        val category1: TextView=
+        val category1: TextView= itemView.findViewById(R.id.category1)
     }
 }
